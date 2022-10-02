@@ -27,7 +27,7 @@ h2{
 }
 .navigation{
   background-color: white !important;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .navbar-text a img{
@@ -125,11 +125,12 @@ h2{
 
 .itembutton{
   width: 29%;
-  height: auto;
   margin: 1.1%;
 }
 
 .streetwears,.pants,.shirts{
+width: 100;
+margin: 1.1%;
 padding-top: 400px;
 color: white;
 margin-bottom: 20px;
@@ -187,49 +188,15 @@ padding-bottom: 5px;
   position: static;
 }
 
-.collection{
- margin-bottom: 30px;
-}
-
-.men {
-  /*width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  margin:;*/
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
- }
-
-.mencollection{
-  flex: 25%;
-  margin: 30px auto;
-  width: 30%;
-}
-
-men img{
-  width: 100%;
-  height: auto;
-
-}
-
-.collection h2{
-  width: 14%;
-  border-bottom: 2px solid black;
-  margin: 0 auto;
-
-}
-
 .recommended{
   margin-bottom: 30px;
 }
 
 .recommended h2{
-  width: 18%;
+  width: 16%;
   border-bottom: 2px solid black;
   margin-left: 90px;
+
 }
 
 .recommended a{
@@ -241,29 +208,17 @@ men img{
 }
 
 .recommend-items {
-  /*width: 20%;*/
+  width: 20%;
   margin: 0 2%;
 }
 
-.recommend-items a{
-  margin: 0;
-}
-
-.recommend-items div{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.recommend-items div .btn{
-border: none;
-color: #15D1DD;
-}
-
-
 .recommend-items img{
-  width: 260px;
+  width: 100%;
   height: auto;
+}
+
+.recommend-items .btn{
+  float: right;
 }
 
 .contain-rec{
