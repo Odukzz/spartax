@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans&display=swap');
+
+
+*{
+  /* padding: 0;
+  margin: 0; */
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type=text],input[type=email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  /*border: 1px solid #ccc;*/
+  border: none;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+
+input, textarea,select {
+  background-color: #ECECEC;
+}
+
+label {
+  padding: 5px 0;
+  display: inline-block;
+}
+
+
+/* Style the submit button */
+
+.button{
+  background-color: black;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  margin: 0 auto;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  width: 160px !important;
+}
+
+/* Style the container */
+.contact_form{
+  margin-bottom: 30px;
+}
+
+.formcontainer {
+  width: 100%;
+}
+
+.formcontainer h1{
+  text-align: left;
+  font-size: 30px;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.row{
+    margin: 0 auto !important; 
+    text-align: left !important;
+    width: 30% !important;
+}
+
+/* Floating column for labels: 25% width */
+.head {
+/*  width: 100%;*/
+  margin-top: 10px;
+}
+
+/* Floating column for inputs: 75% width */
+.answer {
+/*  width: 100%;*/
+  margin-top: 6px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make screen full*/
+@media (max-width: 800px) {
+  .row{
+    width: 90% !important;
+ }
+ .formcontainer h1{
+  width: 90%;
+  margin-bottom: 30px;
+  }
+
+ .button{
+    width: 80% !important;
+  }
+}
