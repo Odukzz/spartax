@@ -363,7 +363,8 @@ background-color: #cfcfd3;
 }
 
 .streetwears,.pants,.shirts{
-width: 100;
+width: 100%;
+background-repeat: no-repeat;
 height: 500px;
 margin: 1.1%;
 padding-top: 450px;
@@ -480,6 +481,7 @@ q {font-style: italic;}
   width: 85%;
   margin-bottom: 60px;
 }
+
 .line{
   align-items: center;
   justify-content: space-between;
@@ -515,16 +517,17 @@ margin-left: 27px;
   font-weight: 600;
   margin-left: 60px;
   margin-bottom: 75px;
+  text-decoration: underline;
 }
-.blackline3::after{
-  position:absolute ;
-content:'';  
-width: 15%;
-	height: 2px;
-	background: #000;
-	display:block;
-	transition:0.5s;
+
+.blackline5{
+  font-weight: 600;
+  margin:0 auto;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-align: center;
 }
+
 .blackline4{
   text-align: center;
   font-weight: 600;
@@ -540,16 +543,6 @@ margin: 0 auto;
 	display:block;
 	transition:0.5s;
 }
-.blackline5::after{
-  position:absolute ;
-content:'';  
-width: 8%;
-	height: 2px;
-	background: #000;
-	display:block;
-	transition:0.5s;
-}
-
 .recommended h2{
   font-weight: 800;
   margin-bottom: 0;
@@ -594,12 +587,12 @@ width: 8%;
   font-weight: 400;
 }
 .recommend-items img{
-  width: 350px;
-  height: 450px;
+  width: 300px;
+  height: 200px;
 }
 .recommend-items2 img{
-  width: 265px;
-  height: 350px;
+  width: 220px;
+  height: 264px;
 }
 .recommend-items2 h5{
   margin-top: 20px;
@@ -731,7 +724,18 @@ width: 8%;
   }
 }
 
-
+@media only screen and (max-width: 991px) {
+  .navbar-brand{
+    display: none;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  .nav-link{
+    display: block;
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 850px) {
   .navbar-brand{
     display: none;
@@ -750,9 +754,9 @@ width: 8%;
     width: 50%;
   }
 
-.col2 {
-  width: 100% !important;
-}
+  .col2 {
+    width: 100% !important;
+  }
 }
 @media only screen and (max-width: 720px){
 
@@ -767,8 +771,8 @@ width: 8%;
     width: 66%;
     margin-left: 20px;
   }
-}
-@media only screen and (max-width: 670px){
+ }
+/*@media only screen and (max-width: 670px){
 
 
   .recommend-items img {
@@ -781,9 +785,9 @@ width: 8%;
   margin: 0 auto;
   width: 50% !important;
 }
-}
+} */
 
-@media only screen and (max-width: 620px){
+/* @media only screen and (max-width: 620px){
   .contain-rec {
     justify-content: center;
   }
@@ -791,10 +795,50 @@ width: 8%;
         width: 434px;
         height: 500px;
     }
+} */
+
+@media only screen and (max-width: 700px){
+  .try1{
+    display: block !important;
+  }
+ 
+ .hideaway{
+  visibility: hidden;
+  height: 0;
+ }
+ .contain-rec{
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin: 0px;
+  justify-content: space-between;
+  }
+  .recommend-items img {
+    width: 42vw;
+    height: 350px;
+  }
+  .try{
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .rec-area{
+    display: block !important;
+  }
+  .more2{
+    margin: 0 auto;
+    width: 30%;
+  }
+  .more{
+    margin: 0 auto;
+    width: 30%;
+  }
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 520px){
   .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     width: 100%;
+  }
+  .items {
+    display: block;
   }
 
   .searchTerm {
@@ -811,10 +855,7 @@ width: 8%;
   .merch .wrapper article img {
     height: 100%;
   }
-  .items {
-    display: block;
-  }
-
+ 
   .itembutton {
       width: 100%;
   }
@@ -824,13 +865,10 @@ width: 8%;
   .recommended {
     width: 91%;
   }
-  .recommend-items img {
+  /* .recommend-items img {
     width: 342px;
     height: 410px;
-  }
-  .blackline4::after {
-    width: 23%;
-  }
+  } */
   .display {
     margin-bottom: 20px;
   }
